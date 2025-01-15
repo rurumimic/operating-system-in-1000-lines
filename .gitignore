@@ -1,4 +1,5 @@
 operating-system-in-1000-lines
+opensbi-riscv32-generic-fw_dynamic.bin
 
 /disk/*
 !/disk/.gitkeep
