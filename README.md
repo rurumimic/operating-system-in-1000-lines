@@ -65,6 +65,6 @@ cd operating-system-in-1000-lines
 #### Boot
 
 ```bash
-./run.sh
+CC=clang OBJCOPY=llvm-objcopy ./run.sh
 ```
 
