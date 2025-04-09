@@ -20,7 +20,7 @@ clang -print-targets | grep riscv32
 sudo apt update && sudo apt install -y clang llvm lld qemu-system-riscv32 curl
 ```
 
-OpenSBI:
+OpenSBI in [qemu/qemu/pc-bios/opensbi-riscv32-generic-fw_dynamic.bin](https://github.com/qemu/qemu/blob/master/pc-bios/opensbi-riscv32-generic-fw_dynamic.bin):
 
 ```bash
 curl -LO https://github.com/qemu/qemu/raw/v8.0.4/pc-bios/opensbi-riscv32-generic-fw_dynamic.bin
