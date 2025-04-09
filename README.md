@@ -1,5 +1,8 @@
 # Operating System in 1,000 Lines
 
+- docs
+  - [qemu](docs/qemu.md)
+
 ## Getting Started
 
 ### Development Tools
@@ -20,6 +23,15 @@ clang -print-targets | grep riscv32
 sudo apt update && sudo apt install -y clang llvm lld qemu-system-riscv32 curl
 ```
 
+test qemu-system-riscv32:
+
+```bash
+qemu-system-riscv32 --version
+
+QEMU emulator version 8.2.2 (Debian 1:8.2.2+ds-0ubuntu1.6)
+Copyright (c) 2003-2023 Fabrice Bellard and the QEMU Project developers
+```
+
 OpenSBI in [qemu/qemu/pc-bios/opensbi-riscv32-generic-fw_dynamic.bin](https://github.com/qemu/qemu/blob/master/pc-bios/opensbi-riscv32-generic-fw_dynamic.bin):
 
 ```bash
@@ -33,6 +45,8 @@ curl -LO https://github.com/qemu/qemu/raw/v8.0.4/pc-bios/opensbi-riscv32-generic
 ```bash
 sudo pacman -Syu --noconfirm clang llvm lld qemu-system-riscv curl
 ```
+
+---
 
 ## Ref
 
